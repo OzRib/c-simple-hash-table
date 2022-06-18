@@ -1,0 +1,10 @@
+#!/bin/sh
+
+FILENAME=$0
+FILE_DIRNAME=$(dirname $FILENAME)
+
+WORKDIR=$FILE_DIRNAME/..
+
+gcc $WORKDIR/main.c -o $WORKDIR/main
+
+echo "Compiled sucessfully"
